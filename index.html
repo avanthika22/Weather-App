@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .weather-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+        }
+
+        .forecast-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .forecast-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .forecast-item h3 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .forecast-item p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .forecast-item .day {
+            font-weight: bold;
+        }
+
+        .forecast-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #infoButton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #infoButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="getWeatherBtn">Get Weather</button>
+        <div class="weather-info" id="weatherInfo"></div>
+        <div class="forecast-info" id="forecastInfo"></div>
+        
+        <p style="margin-top: 20px;">Weather app created by Avanthika Kanna</p>
+
+        <button id="infoButton" style="margin-top: 10px;">Info</button>
+        <p id="infoText" style="display: none; margin-top: 10px;">
+            The Product Manager Accelerator Program is designed to support PM professionals through every stage of their career. 
+            From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped 
+            over hundreds of students fulfill their career aspirations.<br><br>
+            Our Product Manager Accelerator community is ambitious and committed. Through our program, they have learned, honed, 
+            and developed new PM and leadership skills, giving them a strong foundation for their future endeavors.
+        </p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
